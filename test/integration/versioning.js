@@ -28,20 +28,4 @@ describe('Versioning', function() {
             });
         });
     });
-    describe('version 2 for image features', function() {
-      it('should get the right response format', function(done) {
-        indico.imageFeatures(data, {"version": 2})
-          .then(function(res){
-
-            Object.keys(res).should.have.length(4096);
-            done();
-          })
-          .catch(function(err) {
-
-            done(err);
-            return;
-          })
-
-      });
-    });
 });

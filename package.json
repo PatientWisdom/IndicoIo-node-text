@@ -35,9 +35,6 @@
     "request": "^2.36.0",
     "valid-url": "^1.0.9"
   },
-  "optionalDependencies": {
-    "lwip": "0.0.8"
-  },
   "devDependencies": {
     "should": "~3.0.1",
     "mocha": "~1.17.0",

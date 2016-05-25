@@ -1,13 +1,15 @@
 # indico.io
 
-A node.js wrapper for the [indico API](http://indico.io).
+A node.js wrapper for the [indico API](http://indico.io) (TEXT ONLY).
+
+For the full version, see https://github.com/IndicoDataSolutions/IndicoIo-node.
 
 ### Installation
 
 Install with [npm](http://npmjs.org/)
 
 ```
-npm install indico.io
+npm install https://github.com/PatientWisdom/IndicoIo-node-text
 ```
 
 API Keys + Setup
@@ -24,15 +26,6 @@ For API key registration and setup, checkout our [quickstart guide](https://indi
 - Keyword Detection
 - Twitter Virality
 - Intersectional Analysis
-- Multi-API Analysis
-
-#### Image
-- Facial Emotion Recognition
-- Image Feature Extraction
-- Facial Feature Extraction
-- Face Localization
-- Content Filtering
-- Image Recognition
 - Multi-API Analysis
 
 #### Custom Collections
@@ -91,29 +84,6 @@ indico
   .catch(function(err){
     console.log('err: ', err);
   })
-
-
-/*
-  testImage is a b64 encoded image (PNG or JPG)
-*/
-
-indico
-  .imageFeatures(testImage)
-  .then(function(){
-    console.log(res); // [0.0, -0.02568680526917187, ... , 3.0342637531932777]
-  })
-  .catch(function(err){
-    console.log('err: ', err);
-  })
-
-indico
-  .fer(testImage)
-  .then(function(){
-    console.log(res); // {Angry: 0.08843749137458341, Sad: 0.39091163159204684, Neutral: 0.1947947999669361, Surprise: 0.03443785859010413, Fear: 0.17574534848440568, Happy: 0.11567286999192382}
-  })
-  .catch(function(err){
-    console.log('err: ', err);
-  });
 
 ```
 
